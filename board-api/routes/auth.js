@@ -114,7 +114,7 @@ router.get('/status', async (req, res, next) => {
       //로그인이 되었을 때
       //req.user는 passport의 역직렬화 설정에 의하여 로그인 되었을 때
       //로그인한 User 정보를 가져올 수 있다.
-      req.json({
+      res.json({
          isAuthenticated: true,
          user: {
             id: req.user.id,

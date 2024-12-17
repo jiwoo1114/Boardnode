@@ -144,5 +144,5 @@ const signupSlice = createSlice({
          })
    },
 })
-export const { resetAuthError } = signupSlice.actions
+ 
 export default signupSlice.reducer
